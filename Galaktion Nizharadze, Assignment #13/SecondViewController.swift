@@ -45,7 +45,6 @@ class SecondViewController: UIViewController {
         
         editButton.backgroundColor = .white
         editButton.layer.cornerRadius = editButton.bounds.height / 2
-        
     }
 
 }
@@ -56,7 +55,6 @@ extension SecondViewController:  UIImagePickerControllerDelegate & UINavigationC
         
         if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
             pfImage.image = image
-            
         }
         
         picker.dismiss(animated: true)
@@ -65,7 +63,6 @@ extension SecondViewController:  UIImagePickerControllerDelegate & UINavigationC
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true)
     }
-    
 }
 
 
