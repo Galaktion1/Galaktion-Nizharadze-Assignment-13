@@ -25,16 +25,13 @@ class ViewController: UIViewController {
         
         signUpButton.backgroundColor = .white
         signUpButton.layer.cornerRadius = signUpButton.bounds.height / 2
+        
     }
     
 
-    @IBAction func moveToSecondVC(_ sender: Any) {  // ეს აქ არაფერ შუაში არაა, მაგრამ მგონი შემოწმებისას უფრო მარტივი იქნება.
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        vc.modalPresentationStyle = .fullScreen
-        
-        present(vc, animated: true)
+    @IBAction func moveToSecondVC(_ sender: Any) { // ეს აქ არაფერ შუაში არაა, მაგრამ მგონი შემოწმებისას უფრო მარტივი იქნება.
+        let vc = storyboard!.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="928-kM-i2t">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="backpack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAz-ig-Dub">
-                                <rect key="frame" x="77.5" y="174" width="259" height="76.5"/>
+                                <rect key="frame" x="77.5" y="218" width="259" height="76.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="70"/>
                                 <color key="textColor" red="0.97286731000000004" green="0.83994746210000004" blue="0.28215685489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gHY-Se-tfs">
-                                <rect key="frame" x="344.5" y="219.5" width="15" height="14"/>
+                                <rect key="frame" x="344.5" y="263.5" width="15" height="14"/>
                                 <color key="tintColor" red="0.97286731000000004" green="0.83994746210000004" blue="0.28215685489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="Fng-pl-by3"/>
@@ -31,7 +31,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel with people.Make new friends." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEh-xg-14Q">
-                                <rect key="frame" x="82" y="270.5" width="250" height="16"/>
+                                <rect key="frame" x="82" y="314.5" width="250" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="YFZ-0s-SyW"/>
                                 </constraints>
@@ -56,7 +56,15 @@
                                     <constraint firstAttribute="height" constant="50" id="FZd-Zu-50z"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log in">
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Log in">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="Charter-Roman"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -65,11 +73,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_lizard" translatesAutoresizingMaskIntoConstraints="NO" id="uhK-3M-7ul">
+                                <rect key="frame" x="131" y="575" width="152" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="X2X-Wz-qCL"/>
+                                    <constraint firstAttribute="height" constant="82" id="kkr-vF-XvY"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="Ut4-C9-GLb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="6KB-Ww-vT3"/>
+                            <constraint firstItem="Ut4-C9-GLb" firstAttribute="top" secondItem="uhK-3M-7ul" secondAttribute="bottom" constant="55" id="GO3-kk-bBE"/>
                             <constraint firstItem="gHY-Se-tfs" firstAttribute="leading" secondItem="AAz-ig-Dub" secondAttribute="trailing" constant="8" id="I6I-uj-YPb"/>
                             <constraint firstItem="PEh-xg-14Q" firstAttribute="centerX" secondItem="AAz-ig-Dub" secondAttribute="centerX" id="KME-Z4-ZMP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="57S-BG-FM0" secondAttribute="bottom" constant="35" id="LkY-2X-cFu"/>
@@ -81,8 +97,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="57S-BG-FM0" secondAttribute="trailing" constant="35" id="pOC-B7-Hbq"/>
                             <constraint firstItem="57S-BG-FM0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="pvk-Hv-vkL"/>
                             <constraint firstItem="gHY-Se-tfs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="xqF-mU-Zzx"/>
+                            <constraint firstItem="uhK-3M-7ul" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zVt-yv-nIL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qZc-kk-DfW"/>
                     <connections>
                         <outlet property="logInButton" destination="57S-BG-FM0" id="neY-16-B0n"/>
                         <outlet property="signUpButton" destination="Ut4-C9-GLb" id="g3h-ER-l9R"/>
@@ -90,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="146.37681159420291" y="37.5"/>
+            <point key="canvasLocation" x="1056.5217391304348" y="37.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="i3v-Fq-h9q">
@@ -218,11 +236,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6c5-WX-lRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.7101449275362" y="37.5"/>
+            <point key="canvasLocation" x="1989.8550724637682" y="37.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oJv-Ac-wj6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="928-kM-i2t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U16-jE-QGv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ODO-A6-toK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqf-BS-dMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146.37681159420291" y="37.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="img_lizard" width="3026" height="1515"/>
         <image name="img_queen" width="826" height="465"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">

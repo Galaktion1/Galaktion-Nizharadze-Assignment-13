@@ -46,7 +46,6 @@ class SecondViewController: UIViewController {
         editButton.backgroundColor = .white
         editButton.layer.cornerRadius = editButton.bounds.height / 2
     }
-
 }
 
 extension SecondViewController:  UIImagePickerControllerDelegate & UINavigationControllerDelegate {
@@ -56,7 +55,6 @@ extension SecondViewController:  UIImagePickerControllerDelegate & UINavigationC
         if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
             pfImage.image = image
         }
-        
         picker.dismiss(animated: true)
     }
     
@@ -68,7 +66,6 @@ extension SecondViewController:  UIImagePickerControllerDelegate & UINavigationC
 
 extension UITextField {
     func underlined() {
-        
         let border = CALayer()
         let width = CGFloat(1.0)
         border.borderColor = UIColor.darkGray.cgColor
@@ -76,6 +73,5 @@ extension UITextField {
         border.borderWidth = width
         self.layer.addSublayer(border)
         self.layer.masksToBounds = true
-        
     }
 }
