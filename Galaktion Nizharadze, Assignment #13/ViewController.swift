@@ -17,8 +17,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "img_background.png")!)
         confButtons()
-        
-        
     }
     
     private func confButtons() {
